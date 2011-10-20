@@ -1,10 +1,6 @@
 package org.okiwi.planetwars;
 
-public class MonRobot {
-
-	public static void tourne(final GuerreDesPlanetes pw) {
-		new Robot().tourne(pw);
-	}
+public class Jeu {
 
 	public static void main(final String[] args) {
 		String line = "";
@@ -16,7 +12,7 @@ public class MonRobot {
 				case '\n':
 					if (line.equals("go")) {
 						GuerreDesPlanetes pw = new GuerreDesPlanetes(message);
-						tourne(pw);
+						new Robot().tourne(pw);
 						pw.finDuTour();
 						message = "";
 					} else {

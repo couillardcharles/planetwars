@@ -12,7 +12,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>org.okiwi.planetwars.MyBot</mainClass>
+							<mainClass>org.okiwi.planetwars.Jeu</mainClass>
 							<packageName>org.okiwi.planetwars</packageName>
 						</manifest>
 					</archive>
