@@ -1,7 +1,7 @@
 package org.okiwi.planetwars;
 
 public class Vol implements Cloneable {
-	// Initializes a fleet.
+
 	public Vol(final int propriétaire, final int nombreDeVaisseaux, final int planèteSource,
 			final int planèteDestination, final int longueurDuVoyage, final int toursRestants) {
 		this.propriétaire = propriétaire;
@@ -12,7 +12,6 @@ public class Vol implements Cloneable {
 		this.toursRestants = toursRestants;
 	}
 
-	// Initializes a fleet.
 	public Vol(final int propriétaire, final int nombreDeVaisseaux) {
 		this.propriétaire = propriétaire;
 		this.nombreDeVaisseaux = nombreDeVaisseaux;
@@ -28,6 +27,10 @@ public class Vol implements Cloneable {
 
 	public int propriétaire() {
 		return propriétaire;
+	}
+
+	public void propriétaire(final int propriétaire) {
+		this.propriétaire = propriétaire;
 	}
 
 	public int nombreDeVaisseaux() {
@@ -67,7 +70,7 @@ public class Vol implements Cloneable {
 		return this.nombreDeVaisseaux - f.nombreDeVaisseaux;
 	}
 
-	private final int propriétaire;
+	private int propriétaire;
 	private int nombreDeVaisseaux;
 	private final int planèteSource;
 	private final int planèteDestination;
@@ -87,4 +90,5 @@ public class Vol implements Cloneable {
 	public Object clone() {
 		return new Vol(this);
 	}
+
 }
